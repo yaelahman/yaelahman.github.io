@@ -1,0 +1,362 @@
+html {
+  position: relative;
+}
+
+body {
+  font-family: 'Oswald', monospace;
+  margin-bottom: 100px;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #A7D2CB;
+  background-image: cover;
+}
+
+.navbar .collapse .nav-link {
+  font-size: 18px;
+  margin-right: 20px;
+  color: white;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 30px;
+  color: #C98474;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: #A7D2CB;
+  background-image: cover;
+}
+
+.jumbotron img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.jumbotron .display-4 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.jumbotron hr {
+  border: 3px solid #C98474;
+  border-radius: 2px;
+  width: 300px;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  color: white;
+  font-weight: 200px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -20px;
+}
+
+section {
+  min-height: 600px;
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.backgroundnya {
+  background-color: #A7D2CB;
+  width: 100%;
+  height: 100px;
+  margin-top: -33px;
+}
+
+/* .anjay {
+  background-color: #A7D2CB;
+  width: 100%;
+  height: 100px;
+  margin-top: -33px;
+  position: absolute;
+  bottom: 0;
+} */
+
+/* About */
+
+.about h1 {
+  text-align: center;
+  color: #A7D2CB;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about .border-1 {
+  margin-top: -10px;
+  width: 200px;
+  color: #A7D2CB;
+  border: 3px solid #A7D2CB;
+  border-radius: 2px;
+  text-align: right;
+}
+
+.about .border-1::before {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  width: 80px;
+  border: 3px solid #A7D2CB;
+  border-radius: 2px;
+}
+
+.about .text-about {
+  margin-top: 100px;
+}
+
+.about p {
+
+  font-size: 20px;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background: #C98474;
+}
+
+.portfolio .display-4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #A7D2CB;
+}
+
+.portfolio .border-1 {
+  margin-top: -10px;
+  width: 412px;
+  color: seagreen;
+  border: 3px solid seagreen;
+  border-radius: 2px;
+  text-align: right;
+}
+
+.portfolio .border-1::before {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  width: 50%;
+  border: 3px solid seagreen;
+  border-radius: 2px;
+}
+
+.portfolio img {
+  margin-bottom: 80px;
+}
+
+/* Contact Me */
+
+.contact .display-4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #A7D2CB;
+}
+
+.contact .border-1 {
+  margin-top: -10px;
+  width: 360px;
+  color: seagreen;
+  border: 3px solid seagreen;
+  border-radius: 2px;
+  text-align: right;
+}
+
+.contact .border-1::before {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  width: 50%;
+  border: 3px solid seagreen;
+  border-radius: 2px;
+}
+
+.floating-label-form-group {
+  position: relative;
+  border-bottom: 2px solid #A7D2CB;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  padding-right: 0;
+  padding-left: 0;
+  resize: none;
+  border: none;
+  border-radius: 0;
+  background: 0 0;
+  box-shadow: none !important
+}
+
+.floating-label-form-group label {
+  color: #A7D2CB;
+  font-size: .85em;
+  line-height: 1.764705882em;
+  position: relative;
+  z-index: 0;
+  top: 2em;
+  margin: 0;
+  transition: top .3s ease, opacity .3s ease;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0
+}
+
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #e9ecef
+}
+
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1
+}
+
+.floating-label-form-group-with-focus label {
+  color: #1abc9c
+}
+
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #e9ecef
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #A7D2CB;
+  height: 100px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+
+
+@media (min-width: 992px) {
+
+  /* Jumbotron */
+  .jumbotron {
+    margin-top: -75px;
+  }
+
+  /* Navbar */
+
+  .navbar-brand {
+    transition: transform 1s;
+  }
+
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    color: #565063 !important;
+    transform: scale(1) rotate(360deg);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    transition: color 0.5s;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #C98474 !important;
+
+  }
+
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    font-weight: bold;
+    border-radius: 2px;
+    border-bottom: 2px solid #C98474;
+    border: 2px solid #C98474;
+    width: 50%;
+    margin: auto;
+    margin-bottom: -4px;
+  }
+
+  /* About */
+
+  .about h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .about .border-1 {
+    margin-top: -10px;
+    width: 200px;
+    color: #C98474;
+    border: 3px solid #C98474;
+    border-radius: 2px;
+    text-align: right;
+  }
+
+  .about .border-1::before {
+    content: "";
+    display: block;
+    margin-left: 123px;
+    margin-top: 4%;
+    width: 80px;
+    border: 3px solid #C98474;
+    border-radius: 2px;
+  }
+
+  /* About Wave */
+
+  .about:before {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: rotate(2deg);
+    width: 120%;
+    height: 300px;
+    background-color: #A7D2CB;
+    right: 0;
+    top: -157px;
+  }
+
+  /* 
+  .about:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 100%;
+    width: 50%;
+    height: 270px;
+    background-color: white;
+    left: 0;
+    top: -127px;
+  } */
+
+  /* About Text */
+
+  .anjay {
+    border-right: 5px solid #A7D2CB;
+  }
+}
