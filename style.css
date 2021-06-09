@@ -1,0 +1,598 @@
+@font-face {
+  font-family: LinLibertine;
+  src: url("fonts/LinLibertine_RZ.woff");
+}
+
+@font-face {
+  font-family: LinLibertineI;
+  src: url("fonts/LinLibertine_aZL.woff");
+}
+
+@font-face {
+  font-family: Bellarina;
+  src: url("fonts/Bellarina.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GreatVibes;
+  src: url("fonts/GreatVibes-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MoonsteratBold;
+  src: url("fonts/Montserrat-Bold.otf") format("opentype");
+}
+
+body {
+  background-image: url("assets/bg-image1.png");
+  /* background-repeat: no-repeat; */
+  background-size: 100% auto;
+  /* background-position: center top; */
+  background-attachment: fixed;
+}
+
+.navbar {
+  font-size: 0.99em;
+  margin-left: -50px;
+}
+
+.navbar .nav-link {
+  padding-bottom: 5px;
+  font-family: LinLibertine;
+}
+
+.navbar .nav-link:hover {
+  color: #54744a;
+}
+
+.navbar .nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #54744a;
+  border-radius: 5px;
+  margin-top: 4px;
+  margin-bottom: -7px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jumbotron {
+  /* margin-top: -100px; */
+  padding-top: 30px;
+  min-height: 920px;
+  background: none;
+  position: relative;
+}
+
+.jumbotron h1 {
+  font-family: Bellarina;
+  color: #686565;
+}
+
+.jumbotron p {
+  /* margin-top: -10px; */
+  font-family: LinLibertine;
+  color: #686565;
+}
+
+.jumbotron .asset-pojok-kiri {
+  position: absolute;
+  bottom: -30px;
+}
+
+.jumbotron .asset-pojok-kiri img {
+  height: 700px;
+}
+
+.jumbotron .asset-pojok-atas {
+  position: absolute;
+  top: -52px;
+  right: 0;
+  z-index: -1;
+}
+
+.jumbotron .asset-pojok-atas img {
+  height: 250px;
+}
+
+.jumbotron .asset-golden-stroke {
+  position: absolute;
+  bottom: -30px;
+  right: 50px;
+  z-index: -1;
+}
+
+.jumbotron .asset-golden-stroke img {
+  height: 400px;
+}
+
+.jumbotron .pengantin {
+  background-image: url("assets/Frame\ Manten.png");
+  width: 360px;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  margin-top: 70px;
+  position: relative;
+}
+
+.jumbotron .pengantin .daun-1 {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  height: 200px;
+  width: 194px;
+}
+
+.jumbotron .pengantin .daun-2 {
+  position: absolute;
+  bottom: -10px;
+  right: -27px;
+  height: 200px;
+  width: 194px;
+}
+
+.jumbotron .pengantin .nama {
+  padding-top: 80px;
+  font-family: GreatVibes;
+}
+
+.jumbotron .pengantin .nama h2 {
+  color: #686565;
+  font-size: 50px;
+  text-shadow: 7px 7px 15px rgba(43, 41, 41, 0.75);
+}
+
+.jumbotron .pengantin .tanggal {
+  font-size: 21px;
+  font-family: MoonsteratBold;
+  margin-top: 120px;
+}
+
+.jumbotron .pengantin .yth {
+  font-size: 21px;
+  font-family: LinLibertineI;
+  margin-top: 20px;
+}
+
+.jumbotron .pengantin .tanggal::before {
+  content: "";
+  display: block;
+  border-top: 2px solid #cba072;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.jumbotron .pengantin .tanggal::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #cba072;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.jumbotron .pengantin .frame-tamu {
+  background-image: url("assets/Frame\ Tamu.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  height: 200px;
+  width: 360px;
+}
+
+.jumbotron .pengantin .frame-tamu h4 {
+  padding-top: 40px;
+  font-family: LinLibertine;
+}
+
+#infomasi {
+  min-height: 900px;
+  margin-bottom: 0;
+}
+
+#infomasi .text-informasi {
+  padding-top: 50px;
+  color: #686565;
+  font-family: LinLibertine;
+  font-size: 1.1em;
+  /* font-weight: 10000; */
+}
+
+.text-informasi .title {
+  margin-bottom: 80px;
+}
+
+.text-informasi .title::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #cba072;
+  margin-left: auto;
+  margin-right: auto;
+  width: 297px;
+  margin-top: 20px;
+}
+
+.title {
+  font-family: LinLibertine;
+  color: #c69b6b;
+}
+
+#acara {
+  min-height: 900px;
+  margin: 60px 0;
+}
+
+#acara .text-acara {
+  padding-top: 0;
+}
+
+#acara .title {
+  font-family: LinLibertine;
+  color: #c69b6b;
+}
+
+.acara .text-sambutan {
+  max-width: 50%;
+  font-family: LinLibertine;
+  font-size: 16px;
+}
+
+.acara .pengantin {
+  background-image: url("assets/Frame\ Manten.png");
+  width: 270px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  margin-top: 70px;
+  position: relative;
+  padding: 5px 0px;
+}
+
+.acara .pengantin .daun-1 {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  height: 180px;
+  width: 194px;
+}
+
+.acara .pengantin .daun-2 {
+  position: absolute;
+  bottom: -20px;
+  right: -27px;
+  height: 150px;
+  width: 194px;
+}
+
+.acara .pengantin .clip-cowo {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  z-index: -1;
+}
+
+.acara .pengantin-cewe {
+  background-image: url("assets/FrameCewe\ \(2\).png");
+  width: 270px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  margin-top: 70px;
+  position: relative;
+  padding: 5px 0px;
+}
+
+.acara .pengantin-cewe .daun-1 {
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  height: 180px;
+  width: 194px;
+}
+
+.acara .pengantin-cewe .daun-2 {
+  position: absolute;
+  bottom: -20px;
+  left: -27px;
+  height: 150px;
+  width: 194px;
+}
+
+.acara .pengantin-cewe .clip-cewe {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  z-index: -1;
+}
+
+.acara .frame {
+  border: 1px solid #c69b6b;
+  margin-top: 30px;
+}
+
+.acara .nama-cowo,
+.acara .nama-cewe {
+  font-family: GreatVibes;
+  font-size: 50px;
+  font-weight: bold;
+  color: #c69b6b;
+  text-shadow: 7px 7px 15px rgba(255, 255, 255, 0.75);
+}
+
+.acara .nama-lengkap,
+.acara .ortu,
+.acara .alamat {
+  font-family: LinLibertine;
+  color: #666666;
+  font-weight: normal;
+}
+
+#jadwal {
+  min-height: 900px;
+}
+
+.jadwal {
+  margin: 60px 0;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.jadwal .asset-pojok-kiri {
+  position: absolute;
+  top: -103px;
+  left: 40px;
+}
+
+.jadwal .asset-pojok-kiri img {
+  height: 450px;
+  transform: rotate(90deg);
+}
+
+.jadwal .frame {
+  border: 3px solid #cba072;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.jadwal .frame::before {
+  content: "";
+  display: none;
+  border: 5px solid #cba072;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.jadwal .frame::after {
+  content: "";
+  display: block;
+  border: 1px solid #cba072;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+
+.jadwal .frame .title {
+  font-family: LinLibertine;
+  color: #666666;
+}
+
+.jadwal .daun-1 {
+  position: absolute;
+  bottom: -30px;
+  right: -60px;
+  height: 140px;
+  padding: 0;
+  margin: 0;
+}
+
+.jadwal .daun-2 {
+  position: absolute;
+  top: -45px;
+  left: -60px;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+}
+
+.jadwal .tanggal {
+  font-family: LinLibertine;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.jadwal .alamat {
+  font-family: LinLibertine;
+  color: #666666;
+}
+
+#story {
+  min-height: 600px;
+  padding: 100px 300px;
+}
+
+.story .frame {
+  background-image: url("/assets/Group\ 18.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 70px;
+  height: 100px;
+  text-align: center;
+  cursor: pointer;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.story .frame .img {
+  cursor: pointer;
+}
+
+.story .frame img:hover {
+  width: 13px;
+  transition: 0.5s;
+}
+
+.story button {
+  background-image: url("/assets/Group\ 18@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: none;
+  color: unset;
+  width: 70px;
+  background-color: unset;
+  position: relative;
+}
+
+.story button img {
+  position: absolute;
+  top: 16px;
+  left: 30px;
+}
+
+.text {
+  font-family: LinLibertine;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("assets/bg-image1.png");
+    background-size: unset;
+    background-attachment: fixed;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .jumbotron {
+    padding-top: 60px;
+    min-height: 780px;
+  }
+
+  .jumbotron .asset-pojok-kiri img {
+    height: 350px;
+  }
+
+  .jumbotron .asset-pojok-atas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .jumbotron .asset-pojok-atas img {
+    height: 150px;
+  }
+
+  .jumbotron .asset-golden-stroke {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .jumbotron .asset-golden-stroke img {
+    height: 200px;
+  }
+
+  .jumbotron .pengantin {
+    width: 270px;
+    height: 270px;
+    margin-top: 60px;
+  }
+
+  .jumbotron .pengantin .daun-1 {
+    position: absolute;
+    top: -24px;
+    left: -10px;
+    height: 140px;
+    width: 136px;
+  }
+
+  .jumbotron .pengantin .daun-2 {
+    position: absolute;
+    bottom: -7px;
+    right: -17px;
+    height: 140px;
+    width: 136px;
+  }
+
+  .jumbotron .pengantin .nama {
+    padding-top: 50px;
+    font-family: GreatVibes;
+  }
+
+  .jumbotron .pengantin .nama h2 {
+    color: #686565;
+    font-size: 40px;
+    text-shadow: 7px 7px 15px rgba(43, 41, 41, 0.75);
+  }
+
+  .jumbotron .pengantin .tanggal {
+    font-size: 17px;
+    font-family: MoonsteratBold;
+    margin-top: 90px;
+  }
+
+  .jumbotron .pengantin .tanggal::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #cba072;
+    margin: 0 auto;
+    width: 120px;
+  }
+
+  .jumbotron .pengantin .tanggal::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #cba072;
+    margin: 0 auto;
+    width: 120px;
+  }
+
+  .jumbotron .pengantin .frame-tamu {
+    background-image: url("assets/Frame\ Tamu.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 140px;
+    width: 270px;
+  }
+
+  .jumbotron .pengantin .frame-tamu h4 {
+    padding-top: 25px;
+    font-family: LinLibertine;
+  }
+
+  .text-informasi {
+    margin-bottom: 50px;
+  }
+
+  .acara .text-acara .title {
+    padding-top: 50px;
+  }
+
+  .acara .text-sambutan {
+    max-width: none;
+  }
+
+  #story {
+    padding: 0;
+  }
+}
